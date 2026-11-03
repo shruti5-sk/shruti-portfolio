@@ -3,67 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio : Shruti_Khaire</title>
   </head>
   <body>
-    <header class="d-flex d-justify1">
-      <div class="nav d-flex d-justify2">
-        <div class="left d-flex d-justify1">
-          <span>Shruti Khaire</span>
-        </div>
-
-        <div class="right d-flex d-justify6">
-          <div class="a d-flex d-justify6">
-            <a href="index.css" style="color: var(--accent-color)" class="home"
-              >Home</a
-            >
-            <a href="project.html">Projects</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
-          <div class="b d-flex d-justify2">
-            <a href="https://github.com/shruti5-sk" target="_blank"
-              ><img
-                src="images/img2.png"
-                alt=""
-                class="logo-size shadow circle"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/shruti-khaire-9069553a6 "
-              target="_blank"
-              ><img
-                src="images/image.png"
-                alt=""
-                class="logo-size shadow circle"
-            /></a>
-            <a href="https://leetcode.com/u/tsKg53lq8B/" target="_blank">
-              <img src="images/img3.png" alt="" class="logo-size shadow circle"
-            /></a>
-          </div>
+    <!-- navigation bar -->
+    <nav>
+      <div class="container">
+        <!-- name -->
+        <a class="logo">Shruti Khaire</a>
+        <!-- nav right side links -->
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#journey">Journey</a>
+          <a href="#contact">Contact</a>
+          <button>Theme</button>
         </div>
       </div>
-    </header>
+    </nav>
 
-    <main class="d-flex d-justify1">
-      <div class="container d-flex d-justify2">
-        <div class="left d-flex1" style="gap: 1rem">
-          <span class="font3">Hi, I am Shruti Khaire</span>
-          <span class="font1">I am Java Full Stack Developer</span>
-          <span
-            >I enjoy building web experiences and Java applications. I am
-            continuously learning, improving my coding skills, and turning ideas
-            into clean, functional projects.</span
-          >
-          <div class="d-flex d-justify4 gap-10">
-            <a href="project.html" class="font2 text-a">view my projects </a>
-            <span><img src="images/arrow.png" alt="" class="logo-s2" /></span>
+    <!-- main area -->
+    <main class="container">
+      <!-- hero banner -->
+      <header class="hero">
+        <!-- hero text div -->
+        <div class="left">
+          <h1>I build Java apps from database to browser.</h1>
+          <p class="disc">
+            I’m an Information Technology engineering graduate training in Java
+            full stack development. I turn ideas into working Spring Boot and
+            React applications.
+          </p>
+
+          <!-- hero buttons div -->
+          <div class="btn">
+            <!-- //project button -->
+            <button class="btn p">See my projects</button>
+            <!-- //get in touch button -->
+            <button class="btn c">Get in touch</button>
           </div>
         </div>
-        <div class="right d-flex d-justify1">
-          <img src="images/myphoto.png" alt="" class="" />
+
+        <!-- //code div -->
+        <div class="code">
+          <span class="o">public class</span> Developer {<br />
+          &nbsp;&nbsp;String name = <span class="g">"Your Name"</span>;<br />
+          &nbsp;&nbsp;String degree =
+          <span class="g">"B.E. Information Technology"</span>;<br />
+          &nbsp;&nbsp;String[] stack = {<span class="g">"Java"</span>,
+          <span class="g">"Spring Boot"</span>,<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="g">"React"</span>,
+          <span class="g">"MySQL"</span>};<br />
+          &nbsp;&nbsp;<span class="o">boolean</span> openToWork =
+          <span class="o">true</span>;<br />
+          &nbsp;&nbsp;<span class="m">// next: your first dev role</span
+          ><span class="cursor">|</span><br />
+          }
         </div>
-      </div>
+      </header>
+      <!-- about  -->
+      <!-- <section id="about"></section> -->
+      <!-- skills -->
+      <!-- <section id="skills"></section> -->
+      <!-- project -->
+      <!-- <section id="projects"></section> -->
+      <!-- journey -->
+      <!-- <section id="journey"></section> -->
+      <!-- contact -->
+      <!-- <section id="contact"></section> -->
     </main>
+
+    <!-- footer -->
+    <!-- <footer>&copy;2026 Shruti Khaire , Built with HTML, CSS, JavaScript</footer> -->
   </body>
 </html>
