@@ -216,19 +216,6 @@ main {
   cursor: pointer;
 }
 
-@media (max-width: 585px) {
-  nav .container .links {
-    display: none;
-  }
-  .res-nav {
-    display: block;
-  }
-  .res-links,
-  .res-links a {
-    display: block;
-  }
-}
-
 .res-links {
   display: flex;
   flex-direction: column;
@@ -366,6 +353,50 @@ card {
   font-weight: bold;
 }
 
+/* journey */
+
+.journey {
+  margin-top: 100px;
+}
+.jorney-list {
+  margin-top: 50px;
+  border-left: 2px solid var(--line);
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 20px;
+  /* border: 2px solid red; */
+}
+
+.jorney-list card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.tx-a {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.tx-b {
+  font-size: 15px;
+  color: var(--muted);
+  /* font-weight: bold; */
+  padding-bottom: 10px;
+}
+
+.tx-c {
+  font-size: 16px;
+  font-weight: 550;
+  padding-bottom: 10px;
+}
+
 @media (max-width: 760px) {
   .hero,
   .about,
@@ -374,7 +405,21 @@ card {
   }
 
   .about,
-  .skills {
+  .skills,
+  .journey {
     margin-top: 60px;
+  }
+}
+
+@media (max-width: 585px) {
+  nav .container .links {
+    display: none;
+  }
+  .res-nav {
+    display: block;
+  }
+  .res-links,
+  .res-links a {
+    display: block;
   }
 }
