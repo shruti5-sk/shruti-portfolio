@@ -397,16 +397,52 @@ card {
   padding-bottom: 10px;
 }
 
+.contact {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  width: 100%;
+}
+
+form .smc {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+form .con {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 10px !important;
+}
+
 @media (max-width: 760px) {
   .hero,
   .about,
-  .contact {
+  .contact,
+  form {
     grid-template-columns: 1fr;
   }
 
   .about,
   .skills,
-  .journey {
+  .journey,
+   {
     margin-top: 60px;
   }
 }
