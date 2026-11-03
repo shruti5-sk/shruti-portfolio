@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   /* outline: 2px solid red; */
 }
 
@@ -40,8 +41,9 @@ body {
 
 /* navigation bar */
 nav {
-  height: 60px;
+  min-height: 60px;
   width: 100%;
+  /* max-width: 1040px; */
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
@@ -49,6 +51,7 @@ nav {
   border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
+  position: relative;
 }
 
 nav .container {
@@ -72,6 +75,7 @@ nav .logo {
   color: var(--ink);
   font-weight: bold;
   font-size: 18px;
+  text-wrap: no-wrap;
 }
 
 nav .links a {
@@ -208,4 +212,64 @@ main {
   .contact {
     grid-template-columns: 1fr;
   }
+}
+
+/* res-nav */
+.res-nav {
+  display: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media (max-width: 585px) {
+  nav .container .links {
+    display: none;
+  }
+  .res-nav {
+    display: block;
+  }
+  .res-links,
+  .res-links a {
+    display: block;
+  }
+}
+
+.res-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 40%; */
+  /* border: 2px solid hotpink; */
+  gap: 20px;
+  display: none;
+  position: absolute;
+  border: 1px solid var(--line);
+  background-color: var(--bg);
+  padding: 20px 100px;
+  border-radius: 20px;
+  top: 35px;
+  right: 0;
+}
+
+.res-links a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.res-links button {
+  color: var(--ink);
+  background-color: var(--surface);
+  border: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.res-links.active {
+  display: flex;
 }
