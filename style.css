@@ -20,6 +20,18 @@
   --code-bg: #0a101d;
 }
 
+body.light {
+  --bg: #f4f7fa;
+  --surface: #ffffff;
+  --ink: #14213d;
+  --muted: #46536a;
+  --line: #cbd5e1;
+  --accent: #087f72;
+  --accent-ink: #ffffff;
+  --warm: #a45b08;
+  --code-bg: #edf2f7;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -252,6 +264,18 @@ main {
   cursor: pointer;
 }
 
+@media (max-width: 585px) {
+  nav .container .links {
+    display: none;
+  }
+  .res-nav {
+    display: block;
+  }
+
+  .res-links a {
+    display: block;
+  }
+}
 .res-links.active {
   display: flex;
 }
@@ -416,16 +440,52 @@ form {
 form .smc {
   display: flex;
   flex-direction: column;
-
-  justify-content: space-between;
+  font-size: 19px;
+  color: var(--accent);
+  justify-content: space-around;
 }
 
+.smc a {
+  font-size: 19px;
+  color: var(--accent);
+  justify-content: space-between;
+}
 form .con {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
 }
 
+form input,
+textarea {
+  border: 1px solid var(--line);
+  background-color: var(--code-bg);
+  border-radius: 10px;
+  padding: 20px;
+  outline: none;
+  color: var(--ink);
+}
+
+form label {
+  color: var(--muted);
+  font-size: 14px;
+  padding: 10px;
+  padding-left: 0;
+}
+
+form input:hover {
+  border: 2px solid var(--warm);
+}
+
+form button {
+  background-color: var(--accent);
+  border: none;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
 footer {
   margin-top: 50px;
   font-size: 10px !important;
@@ -441,21 +501,7 @@ footer {
 
   .about,
   .skills,
-  .journey,
-   {
+  .journey {
     margin-top: 60px;
-  }
-}
-
-@media (max-width: 585px) {
-  nav .container .links {
-    display: none;
-  }
-  .res-nav {
-    display: block;
-  }
-  .res-links,
-  .res-links a {
-    display: block;
   }
 }
